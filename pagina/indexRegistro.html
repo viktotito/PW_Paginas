@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="registro.js "></script>
+	<title>Registration Form In HTML and CSS</title>
+    <link rel="stylesheet" href="styles/registro.css">
+</head>
+<body>
+	
+<div class="container">
+	<div class="registration_form">
+	    <h1>Registro</h1>
+
+		<form>
+			<div class="form_wrap">
+				<div class="input_grp">
+					<div class="input_wrap">
+						<label for="fname">Nombre(s)</label>
+						<input type="text" id="fname" required>
+					</div>
+					<div class="input_wrap">
+						<label for="lname">Apellido paterno</label>
+						<input type="text" id="lname" required>
+					</div>
+                    <div class="input_wrap">
+						<label for="lname">Apellido materno</label>
+						<input type="text" id="lname" required>
+					</div>
+
+
+				</div>
+				<div class="input_wrap">
+					<label for="email">Email</label>
+					<input type="text" id="email"  required>
+				</div>
+				<div class="input_wrap">
+					<label>Fecha de nacimiento</label>
+					<ul>
+					
+						<li>
+                                <input type="date" id="date" size="50" class="form-control" min="1910-01-01" max="2020-01-01" required> 							
+						</li>
+					</ul>
+				</div>
+				<div class="input_wrap">
+					<label for="Username">Nombre de usuario</label>
+					<input type="text" id="username" required>
+				</div>
+				<div class="input_wrap">
+					<label for="contraseña">Contraseña</label>
+					<input type="text" id="password" required>
+				</div>
+                <div class="input_wrap">
+					<label for="confirmar_contraseña">Confirmar contraseña</label>
+					<input type="text" id="Cpassword" required>
+				</div>
+				<div class="input_wrap">
+					<input type="submit" value="Registrate" class="submit_btn">
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+</body>
+</html>
