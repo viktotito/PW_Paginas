@@ -4,7 +4,8 @@
 
 }
 body{
-    background-color: rgb(255, 249, 166);
+    background-image: url("bg2.png");
+    height: 100vh;
     background-size: cover;
     font-family: sans-serif;
 }
@@ -20,6 +21,8 @@ body{
     }
     
     .banner_content{
+        background-size: cover;
+
         margin: 0;
         padding: 0;
         width: 100%;
@@ -51,15 +54,16 @@ body{
 @keyframes banner{
     0%{
         background-image: url('../styles/banner/slider_1.jpeg');
+        
     }
     25%{
         background-image: url('../styles/banner/slider_1.jpeg');
     }
     26%{
-        background-image: url('../styles/banner/slider_2.jpeg');
+        background-image: url('../styles/banner/slider_2.jpg');
     }
     50%{
-        background-image: url('../styles/banner/slider_2.jpeg');
+        background-image: url('../styles/banner/slider_2.jpg');
     }
     51%{
         background-image: url('../styles/banner/slider_3.jpeg');
@@ -221,6 +225,13 @@ background:  rgb(194, 116, 71);
     text-decoration: none;
   padding: 5px;
     }
+    #publicaciones .favoritos{
+        color: rgb(214, 157, 82);
+        border: 0px;
+        padding: 5px;
+        text-decoration: none;
+      padding: 5px;
+        }
 
 .container-fluid{
     height: 80px;
@@ -246,11 +257,11 @@ margin-right: 10px;
 }
 
 .paginacion ul .active a{
-    background: #2F2F4C;
-    }
+    background: #101018;
+}
     
     .paginacion ul .disabled{
-        background: #2F2F4C;
+        background: #101018;
         display: inline-block;
         padding: 15px 25px;
         color: #fff;
@@ -258,7 +269,7 @@ margin-right: 10px;
         }
 
         .paginacion ul li a{
-            background: #2F2F4C;
+            background: #101018;
             display: inline-block;
             padding: 15px 25px;
             
@@ -272,6 +283,13 @@ background: rgb(194, 223, 69);
         }
             
 
+        #sidebar{
+           
+            float: right;
+            width: 10%;
+           
+         overflow: hidden;
+        }
 /*-------------Footer--------------------*/
 
 .footer
