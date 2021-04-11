@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
+  <script src="https://kit.fontawesome.com/54fd3c7fde.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/ver_pregunta.css">
 
   <title>Document</title>
@@ -57,8 +57,93 @@
 
       
 
-   <!--------------------------ESCRIBIR LA PREGUNTA----------------------------------> 
+   <!--------------------------Seccion de la pregunta con las respuestas----------------------------------> 
+   <section id= "principal">
   
+
+    <section id= "publicaciones">
+   <article class="post">
+    <a href="/principal.html" class="home">Home</a>
+    >
+    <a href="" class="category">Otros</a>&nbsp; &nbsp;
+    <a href="" class="enlace-post">
+      <h2 class="titulo-post">Titulo de la pregunta</h2>
+     </a> 
+ <img src="/styles/banner/avatar.png" class="img-post">
+ <p>
+   <strong>Por:</strong><span class= "datos-publicaciones">Panchito Pistoles</span>
+ &nbsp; &nbsp; 
+ <strong>Fecha:</strong><span class= "datos-publicaciones">Fecha de publicación</span>
+ </p>
+ <p class="contenidoP-post">
+ Aqui es donde se mostrara el contenido de la pregunta
+ por ejemplo: Ayer se me cayo mi celular en un bote de pintura y ya no prende, ¿que puedo hacer?
+ </p>
+
+
+
+
+ 
+ <span class="num-comentarios">10 respuestas</span>
+ <div class="utilidad">
+
+
+
+
+
+ <label for="util__btn">¿Te pareció util esta pregunta?</label>
+ <button class="util__btn">
+  <span id="icon"><i class="far fa-lightbulb"></i></span>
+      <span id="count">0</span> Util
+   </button>
+   <button class="Noutil__btn">
+    <span id="iconNo"><i class="far fa-sad-tear"></i></span>
+        <span id="count2"></span> No util
+     </button>
+
+   <button class="fav__btn">
+    <span id="iconfav"><i class="far fa-heart"></i></span>
+
+     </button>
+
+
+  </div>
+
+   </article>
+  </section>
+</section>
+   <!--------------------------Seccion de respuestas----------------------------------> 
+
+   <div class="wrapper">
+    <form action="" class="form">
+			<div class="row">
+				<div class="input-group">
+					<label for="name">Usuario</label>
+					<input type="text" name="name" id="name" placeholder="Nombre de usuario" required>
+				</div>
+				<div class="input-group">
+					<label for="email">Fecha</label>
+					<input type="email" name="email" id="email" placeholder="Fecha " required>
+				</div>
+			</div>
+
+			<div class="input-group textarea">
+				<label for="comment">Comentario</label>
+				<textarea id="comment" name="comment" placeholder="Responder a esta publicación" required></textarea>
+			</div>
+			<div class="prev-comments">
+				<div class="single-item">
+					<h2 href="">Victoria Rivas</h2>
+					<p>chale amigo, dudo que se pueda resolver lo de tu celular yo digo que mejor te compres otro xd</p>
+				</div>	
+			
+				
+			</div>
+		</form>
+      </div>
+    <!--------------Archivo js-----------------------> 
+
+      <script src="/js/ver_pregunta.js"></script>
 
    <!--------------Footer-----------------------> 
 
